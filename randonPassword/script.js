@@ -16,7 +16,7 @@ function getPassword() {
     }
     document.getElementById("password").value = password; /* pega o elemento que tem o ID password no HTML e coloca o valor dele dentro da let password*/
 
-    alertBox.innerHTML = "New Password Copied: <br>" + password; /* mostra no HTML essa mensagem quando o alerta de senha copiada é disparado */
+    /* alertBox.innerHTML = "New Password Copied: <br>" + password; */ /* mostra no HTML essa mensagem quando o alerta de senha copiada é disparado */
   }
 
   function copyPassword(){
@@ -24,8 +24,8 @@ function getPassword() {
       copyPasswordText.select();
       copyPasswordText.setSelectionRange(0,9999);
       document.execCommand("copy");
-      alertBox.classList.toggle('active');
+      /* alertBox.classList.toggle('active');
       setTimeout(function(){
         alertBox.classList.toggle('active');
-      }, 2000);
+      }, 2000); */
   } /* copia a senha que foi gerada */
