@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=DotGothic16&family=Open+Sans&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    outline: none;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: linear-gradient(-225deg, #20E2D7 0%, #F9FEA5 100%);
+}
+
+input{
+    margin: 2px;
+    border: none;
+}
+
+input[type=text]{
+    width: 99%;
+    height: 40px;
+    border-radius: 5px;
+}
+
+input[type=button]{
+    width: 100px;
+    height: 50px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+div#calculadora div{
+    display: flex;
+}
+
+div#calculadora div input:nth-child(4){
+    background: gainsboro;
+}
+
+div#quarta input:nth-child(1){
+    background-image: linear-gradient(-225deg, #5271C4 0%, #B19FFF 48%, #ECA1FE 100%);
+    border-bottom-left-radius: 35px;
+}
+
+div#quarta input:nth-child(3){
+    background-image: linear-gradient(-225deg, #FFE29F 0%, #FFA99F 48%, #FF719A 100%);
+}
+
+div#quarta input:nth-child(4){
+    /* background-image: linear-gradient(-225deg, #5271C4 0%, #B19FFF 48%, #ECA1FE 100%); */
+    border-bottom-right-radius: 35px;
+}
+
+input[type=button]:hover{
+    filter: brightness(90%);
+}
+
+input[type=button]:active{
+    transform: scale(0.9);
+}
